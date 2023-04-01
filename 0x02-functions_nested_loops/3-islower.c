@@ -1,19 +1,19 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 
-void print_alphabet_x10(void) {
-    int i, j;
-    for (i = 0; i < 10; i++) {
-        char c = 'a';
-        for (j = 0; j < 26; j++) {
-            putchar(c);
-            c++;
-        }
-        putchar('\n');
-    }
-}
+/**
+ * _islower - checks whether or not a character is lowercase
+ * @c: integer representing ascii value of character
+ * Return: 1 if it is lowercase or 0 otherwise
+ */
 
-int main() {
-    print_alphabet_x10();
-    return 0;
+int _islower(int c)
+{
+	if (c >= 97 && c <= 123)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }

@@ -1,13 +1,11 @@
-#include <stdio.h>
+#include "main.h"
 
-void updateValue(int* ptr) {
-    *ptr = 98;
-}
-
-int main() {
-    int myValue = 0;
-    printf("Value before update: %d\n", myValue);
-    updateValue(&myValue);
-    printf("Value after update: %d\n", myValue);
-    return 0;
+/**
+ * reset_to_98 - changes the value of the variable
+ * that's pointed to by the argument to 98
+ *@n: pointer variable
+ */
+void reset_to_98(int *n)
+{
+	*n = 98;
 }
